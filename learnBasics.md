@@ -52,7 +52,7 @@ Mutable refers to changeable data type and Immutable refers to unchangeable data
 | StringBuilder |           |
 
 Similarly many more are there as per different programming languages. But the question arises how they are immutable. As when we assign a value lets say,
-Int a = 10;
+`int a = 10;`
 Here 10 is kept in heap memory and a is kept in stack memory and a points towards 10. When we assign value to 11 then the object is not changed just the variable points towards the 11 in heap memory.
 
 ### ASCII and UTF encoding
@@ -83,7 +83,7 @@ They both convert the high level code into binary or machine level code. But the
 ### Memory Management:
 Computer memory works as two parts Heap and Stack, and they store program’s Objects and References. 
 When we use 
-Int a = 4;
+`int a = 4;`
 a is a reference for a memory address where 4 is stored. And 4 is stored in the head while a is stored in the stack. In c and c++ there is manual memory management where we on our own have to assign memory and free it, it is done with the help of pointers and functions like malloc, realloc etc.
 
 While in Java and Python the memory management is done automatically with the help of Garbage collector. Which use reference count and reference mark technique to automatically free the space.
