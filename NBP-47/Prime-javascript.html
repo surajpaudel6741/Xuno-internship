@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="number"></div>
+</body>
+<script>
+    const doc = document.getElementById("number");
+    let a = prompt("Enter any number ");
+    let b = 0;
+    let count = 0;
+if (a==1 || a == 0){
+    b = 1;
+}
+    
+else{
+    for (let i = 2;i<= Math.sqrt(a);i++){
+        count = count + 1;
+        if (a % i ==0) b = 1;
+    }
+        
+}
+    
+if (b == 0){
+    doc.innerHTML = "Yes it is prime number";
+    
+}
+    
+else{
+    doc.innerHTML = "No it is not a prime number";
+}
+alert(count);
+</script>
+</html>
