@@ -1,10 +1,9 @@
 
 public class main {
-
     public static void main(String[] args) {
          int n = 200;
          int prime[] = new int[n+1];
-         for(int i=0;i<=n;i++){
+         for(int i=0;i<n;i++){
             prime[i] = 1;
          }
          prime[0]=0;
